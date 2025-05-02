@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Portfolio</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-image">LOGO IMAGE</div>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="pages/about/index.html">About</a></li>
+                <li><a href="pages/bespoke/index.html">Bespoke</a></li>
+                <li><a href="pages/project/index.html">Project</a></li>
+                <li><a href="pages/collection/index.html">Collection</a></li>
+                <li><a href="pages/contact/index.html">Contact</a></li>
+                <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <div class="burger-menu">
+                <div class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        <nav class="mini-nav">
+            <div class="mini-logo">
+                <a href="index.html">
+                    <div class="logo-image-mini">LOGO</div>
+                </a>
+            </div>
+            <div class="burger-menu-mini">
+                <div class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <video autoplay muted loop id="header-video">
+            <source src="assets/images/placeholder-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Category Navigation Section -->
+    <section class="category-section">
+        <div class="category-container">
+            <div class="category-card">
+                <a href="pages/bespoke/index.html">
+                    <div class="category-image">
+                        <img src="/api/placeholder/400/320" alt="Bespoke">
+                    </div>
+                    <h2>BESPOKE</h2>
+                </a>
+            </div>
+            <div class="category-card">
+                <a href="pages/project/index.html">
+                    <div class="category-image">
+                        <img src="/api/placeholder/400/320" alt="Project">
+                    </div>
+                    <h2>PROJECT</h2>
+                </a>
+            </div>
+            <div class="category-card">
+                <a href="pages/collection/index.html">
+                    <div class="category-image">
+                        <img src="/api/placeholder/400/320" alt="Collection">
+                    </div>
+                    <h2>COLLECTION</h2>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About and Instagram Section -->
+    <section class="about-instagram-section">
+        <div class="about-instagram-container">
+            <div class="about-column">
+                <div class="about-image">
+                    <img src="/api/placeholder/400/320" alt="About Image">
+                </div>
+                <div class="about-text">
+                    <h2>ABOUT SECTION</h2>
+                    <p>Welcome to our design portfolio. We create unique designs across various categories including bespoke pieces, projects, and collections.</p>
+                    <a href="pages/about/index.html" class="about-link">Read More</a>
+                </div>
+            </div>
+            <div class="instagram-column">
+                <h2>INSTAGRAM CONNECTED</h2>
+                <div class="instagram-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <img src="/api/placeholder/200/200" alt="Instagram Post 1">
+                            <img src="/api/placeholder/200/200" alt="Instagram Post 2">
+                            <img src="/api/placeholder/200/200" alt="Instagram Post 3">
+                            <img src="/api/placeholder/200/200" alt="Instagram Post 4">
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="prev-button"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-button"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2>CONTACT</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html">LOGO</a>
+            </div>
+            <div class="footer-links">
+                <a href="pages/about/index.html">About</a>
+                <a href="pages/bespoke/index.html">Bespoke</a>
+                <a href="pages/project/index.html">Project</a>
+                <a href="pages/collection/index.html">Collection</a>
+                <a href="pages/contact/index.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Designer Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/home.js"></script>
+</body>
+</html>
