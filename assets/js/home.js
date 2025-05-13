@@ -32,3 +32,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 }); 
+
+// Contact form mailto functionality
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const message = document.getElementById('message').value;
+
+        const subject = encodeURIComponent('New Contact Form Submission');
+        const body = encodeURIComponent(message);
+
+        window.location.href = `mailto:alice@ahframeartist.com?subject=${subject}&body=${body}`;
+    });
+} 
