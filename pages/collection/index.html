@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="../../assets/css/common.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .coming-soon-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -37,146 +51,14 @@
     </header>
 
     <!-- Page Banner -->
-    <section class="page-banner">
-        <div class="banner-content">
-            <h1>Collections</h1>
-        </div>
-    </section>
-
-    <!-- Featured Collection -->
-    <section class="featured-collection">
-        <div class="container">
-            <div class="featured-wrapper">
-                <div class="featured-image">
-                    <img src="/api/placeholder/800/500" alt="Featured Collection">
-                </div>
-                <div class="featured-content">
-                    <h2>Spring 2025 Collection</h2>
-                    <p class="collection-date">Released: January 2025</p>
-                    <p class="collection-desc">Our newest collection draws inspiration from nature's renewal. Featuring clean lines, sustainable materials, and versatile designs that adapt to modern living.</p>
-                    <a href="#" class="view-collection-btn">View Collection</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Collections Archive -->
-    <section class="collections-archive">
-        <div class="container">
-            <h2>Past Collections</h2>
-            
-            <div class="collection-grid">
-                <div class="collection-item">
-                    <div class="collection-image">
-                        <img src="/api/placeholder/600/400" alt="Winter 2024 Collection">
-                    </div>
-                    <div class="collection-details">
-                        <h3>Winter 2024</h3>
-                        <p class="collection-date">November 2024</p>
-                        <p class="collection-summary">Bold designs inspired by urban architecture and winter landscapes.</p>
-                        <a href="#" class="collection-link">View Collection</a>
-                    </div>
-                </div>
-                
-                <div class="collection-item">
-                    <div class="collection-image">
-                        <img src="/api/placeholder/600/400" alt="Fall 2024 Collection">
-                    </div>
-                    <div class="collection-details">
-                        <h3>Fall 2024</h3>
-                        <p class="collection-date">August 2024</p>
-                        <p class="collection-summary">Warm tones and versatile pieces that transition between seasons.</p>
-                        <a href="#" class="collection-link">View Collection</a>
-                    </div>
-                </div>
-                
-                <div class="collection-item">
-                    <div class="collection-image">
-                        <img src="/api/placeholder/600/400" alt="Summer 2024 Collection">
-                    </div>
-                    <div class="collection-details">
-                        <h3>Summer 2024</h3>
-                        <p class="collection-date">May 2024</p>
-                        <p class="collection-summary">Lightweight, breathable designs perfect for the summer months.</p>
-                        <a href="#" class="collection-link">View Collection</a>
-                    </div>
-                </div>
-                
-                <div class="collection-item">
-                    <div class="collection-image">
-                        <img src="/api/placeholder/600/400" alt="Spring 2024 Collection">
-                    </div>
-                    <div class="collection-details">
-                        <h3>Spring 2024</h3>
-                        <p class="collection-date">February 2024</p>
-                        <p class="collection-summary">Blue colors and innovative patterns celebrating new beginnings.</p>
-                        <a href="#" class="collection-link">View Collection</a>
-                    </div>
-                </div>
-                
-                <div class="collection-item">
-                    <div class="collection-image">
-                        <img src="/api/placeholder/600/400" alt="Winter 2023 Collection">
-                    </div>
-                    <div class="collection-details">
-                        <h3>Winter 2023</h3>
-                        <p class="collection-date">November 2023</p>
-                        <p class="collection-summary">Sophisticated designs with a focus on texture and layering.</p>
-                        <a href="#" class="collection-link">View Collection</a>
-                    </div>
-                </div>
-                
-                <div class="collection-item">
-                    <div class="collection-image">
-                        <img src="/api/placeholder/600/400" alt="Fall 2023 Collection">
-                    </div>
-                    <div class="collection-details">
-                        <h3>Fall 2023</h3>
-                        <p class="collection-date">August 2023</p>
-                        <p class="collection-summary">Earth tones and sustainable materials come together in this collection.</p>
-                        <a href="#" class="collection-link">View Collection</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lookbook Section -->
-    <section class="lookbook-section">
-        <div class="container">
-            <h2>Collection Lookbooks</h2>
-            <p class="lookbook-intro">Explore our curated lookbooks featuring styling inspiration from our collections.</p>
-            
-            <div class="lookbook-grid">
-                <div class="lookbook-item">
-                    <div class="lookbook-image">
-                        <img src="/api/placeholder/400/600" alt="Spring 2025 Lookbook">
-                        <div class="lookbook-overlay">
-                            <a href="#" class="lookbook-btn">View Lookbook</a>
-                        </div>
-                    </div>
-                    <h3>Spring 2025</h3>
-                </div>
-                
-                <div class="lookbook-item">
-                    <div class="lookbook-image">
-                        <img src="/api/placeholder/400/600" alt="Winter 2024 Lookbook">
-                        <div class="lookbook-overlay">
-                            <a href="#" class="lookbook-btn">View Lookbook</a>
-                        </div>
-                    </div>
-                    <h3>Winter 2024</h3>
-                </div>
-                
-                <div class="lookbook-item">
-                    <div class="lookbook-image">
-                        <img src="/api/placeholder/400/600" alt="Fall 2024 Lookbook">
-                        <div class="lookbook-overlay">
-                            <a href="#" class="lookbook-btn">View Lookbook</a>
-                        </div>
-                    </div>
-                    <h3>Fall 2024</h3>
-                </div>
+    <section class="coming-soon-section">
+        <div>
+            <img src="../../assets/images/LOGO MAIN@6x.png" alt="Logo" style="width:100px;height:auto;margin-bottom:1rem;">
+            <div class="heading" style="margin-bottom:0.5rem;">A.H FRAME ARTIST</div>
+            <div class="heading" style="font-size:2rem;margin-bottom:1rem;">COMING SOON</div>
+            <div class="subheading" style="margin-bottom:0.5rem;">GET IN TOUCH @ ALICE@AHFRAMEARTIST.COM</div>
+            <div class="subheading" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;">
+                <a href="https://instagram.com/ahargreavesdesign/" target="_blank" style="color:inherit;">CHECK PROGRESS HERE</a>
             </div>
         </div>
     </section>
