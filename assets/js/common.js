@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Navigation transition on scroll
     const header = document.querySelector('.header');
     const fullNav = document.querySelector('.nav-container');
-    const miniNav = document.querySelector('.mini-nav');
     
     // Mobile menu elements
     const burgerMenu = document.querySelector('.burger-menu');
@@ -36,17 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Scroll event handler for navigation transition
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 100) {
-            fullNav.style.display = 'none';
-            miniNav.style.display = 'flex';
-        } else {
-            fullNav.style.display = 'flex';
-            miniNav.style.display = 'none';
-        }
+        fullNav.style.display = 'flex';
     });
-    
-    // Initially hide mini nav
-    miniNav.style.display = 'none';
     
     // Mobile menu toggle function
     function toggleMobileMenu() {
