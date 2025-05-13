@@ -310,6 +310,6 @@ section {
 .headline {
     font-family: 'nitti', monospace, Arial, sans-serif;
     font-weight: 500;
-    font-size: 18pt;
+    font-size: 25pt;
     letter-spacing: 0.2em; /* 200 tracking = 0.02em */
 } 

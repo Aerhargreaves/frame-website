@@ -2,7 +2,7 @@
 
 /* Video Section */
 .video-section {
-    height: 100vh;
+    height: 50vh;
     overflow: hidden;
     position: relative;
     padding: 0;
@@ -71,9 +71,7 @@
 
 .about-instagram-container {
     display: flex;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .about-column {
@@ -81,7 +79,7 @@
     display: flex;
     flex-direction: column;
     padding-right: 30px;
-    width: 50%;
+    width: 30%;
     box-sizing: border-box;
 }
 
@@ -111,7 +109,7 @@
 .instagram-column {
     flex: 1;
     padding-left: 30px;
-    width: 50%;
+    width: 70%;
     box-sizing: border-box;
 }
 
@@ -214,4 +212,22 @@ textarea {
         padding: 0;
         margin-bottom: 40px;
     }
+}
+
+/* Headline Band Styles */
+.headline-band {
+    width: 100vw;
+    background-color: var(--color-red);
+    color: var(--color-cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.headline-band .headline {
+    /* white-space: nowrap; */
+    white-space: normal;
+    text-align: center;
+    color: var(--color-cream);
+    margin: 0;
 } 
