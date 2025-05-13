@@ -6,13 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Mobile menu elements
     const burgerMenu = document.querySelector('.burger-menu');
-    const burgerMenuMini = document.querySelector('.burger-menu-mini');
+    // const burgerMenuMini = document.querySelector('.burger-menu-mini'); // Not used
     const body = document.body;
     
     // Create mobile menu elements
     const mobileMenu = document.createElement('div');
     mobileMenu.className = 'mobile-menu';
     
+    // Restore closeMenu creation and usage
     const closeMenu = document.createElement('div');
     closeMenu.className = 'close-menu';
     closeMenu.innerHTML = '&times;';
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelector('.nav-links').cloneNode(true);
     mobileMenuLinks.innerHTML = navLinks.innerHTML;
     
-    mobileMenu.appendChild(closeMenu);
+    mobileMenu.appendChild(closeMenu); // Add closeMenu back
     mobileMenu.appendChild(mobileMenuLinks);
     
     const overlay = document.createElement('div');
@@ -43,12 +44,12 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenu.classList.toggle('active');
         overlay.style.display = mobileMenu.classList.contains('active') ? 'block' : 'none';
         body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        // No burgerMenu.classList.toggle('active')
     }
     
     // Event listeners for mobile menu
     burgerMenu.addEventListener('click', toggleMobileMenu);
-    burgerMenuMini.addEventListener('click', toggleMobileMenu);
-    closeMenu.addEventListener('click', toggleMobileMenu);
+    closeMenu.addEventListener('click', toggleMobileMenu); // Restore
     overlay.addEventListener('click', toggleMobileMenu);
     
     // Contact form submission handler - if exists on page
