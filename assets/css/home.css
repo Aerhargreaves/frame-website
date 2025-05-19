@@ -2,7 +2,7 @@
 
 /* Video Section */
 .video-section {
-    height: 60vh;
+    height: 70vh;
     overflow: hidden;
     position: relative;
     padding: 0;
@@ -242,20 +242,41 @@ textarea {
 
 /* Headline Band Styles */
 .headline-band {
-    width: 100vw;
     background-color: var(--color-red);
     color: var(--color-cream);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding: 20px;
 }
+
 .headline-band .headline {
-    /* white-space: nowrap; */
     white-space: normal;
     text-align: center;
     color: var(--color-cream);
     margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .headline-band .headline {
+        font-size: 18pt;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .headline-band .headline {
+        font-size: 14pt;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .headline-band .headline {
+        font-size: 10pt;
+    }
+    .headline-band {
+        padding: 10px;
+    }
 }
 
 .instagram-images {
