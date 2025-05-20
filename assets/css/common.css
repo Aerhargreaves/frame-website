@@ -345,6 +345,7 @@ section {
     font-weight: 500;
     font-size: 10pt;
     letter-spacing: 0.05em; /* 50 tracking = 0.005em */
+    line-height: 1.5;
 }
 
 .headline {
