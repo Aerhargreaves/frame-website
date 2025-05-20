@@ -1,233 +1,108 @@
 /* Bespoke Page Styles */
 
+/* Header */
+.header {
+    top: 0;
+}
+
 /* Active Link */
 .nav-links a.active {
     color: #777;
 }
 
-/* Page Banner */
-.page-banner {
-    height: 40vh;
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 80px;
+/* Header Image Section */
+.header-image-section {
+    width: 100%;
+    height: 35vh;
+    overflow: hidden;
+    margin-top: 0;
 }
 
-.banner-content {
-    text-align: center;
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
 }
 
-.banner-content h1 {
-    font-size: 42px;
-    font-weight: 500;
-    letter-spacing: 2px;
+/* Text Content Section */
+.text-content-section {
+    padding: 2rem;
 }
 
-/* Bespoke Intro */
-.bespoke-intro {
-    padding: 80px 0;
-    text-align: center;
-}
-
-.intro-content {
-    max-width: 800px;
+.text-container {
     margin: 0 auto;
 }
 
-.intro-content h2 {
-    font-size: 32px;
-    margin-bottom: 25px;
-    font-weight: 500;
+.text-container .subheading {
+    text-align: left;
 }
 
-.intro-content p {
-    font-size: 18px;
-    line-height: 1.8;
+.text-container .body {
+    text-align: left;
 }
 
-/* Bespoke Gallery */
-.bespoke-gallery {
-    padding: 40px 0 80px;
-    background-color: #f8f8f8;
+/* Gallery Section */
+.gallery-section {
+    padding: 20px;
 }
 
-.gallery-grid {
+.gallery-container {
+    max-width: 1400px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
 .gallery-item {
-    transition: transform 0.3s ease;
-}
-
-.gallery-item:hover {
-    transform: translateY(-10px);
-}
-
-.gallery-image {
-    margin-bottom: 20px;
+    aspect-ratio: 2/3;
     overflow: hidden;
 }
 
-.gallery-image img {
+.gallery-item img {
     width: 100%;
-    height: auto;
-    transition: transform 0.5s ease;
+    height: 100%;
+    object-fit: cover;
 }
 
-.gallery-item:hover .gallery-image img {
-    transform: scale(1.05);
-}
-
-.gallery-caption h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-
-.gallery-caption p {
-    color: #666;
-    line-height: 1.6;
-}
-
-/* Process Section */
-.process-section {
-    padding: 80px 0;
+/* Contact Section */
+.contact-section {
+    padding: 40px 20px;
     text-align: center;
-}
-
-.process-section h2 {
-    font-size: 32px;
-    margin-bottom: 60px;
-}
-
-.process-steps {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.process-step {
-    flex: 1;
-    padding: 0 15px;
-    position: relative;
-}
-
-.process-step:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    top: 30px;
-    right: -10px;
-    width: 60px;
-    height: 2px;
-    background-color: #ddd;
-}
-
-.step-number {
-    width: 60px;
-    height: 60px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    margin: 0 auto 20px;
-}
-
-.process-step h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.process-step p {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #666;
-}
-
-/* CTA Section */
-.cta-section {
-    padding: 80px 0;
-    background-color: #f0f0f0;
-    text-align: center;
-}
-
-.cta-content {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.cta-content h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.cta-content p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 15px 40px;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #555;
-    color: #fff;
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 992px) {
-    .gallery-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .process-steps {
-        flex-direction: column;
-    }
-    
-    .process-step {
-        margin-bottom: 40px;
-    }
-    
-    .process-step:not(:last-child)::after {
-        display: none;
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .page-banner {
-        height: 30vh;
-        padding-top: 60px;
+    .header-image-section .header-image {
+        display: none;
     }
-    
-    .banner-content h1 {
-        font-size: 32px;
+
+    .header-image-section {
+        background-image: url('../../assets/images/bespoke/bespoke 2.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 2rem;
+        height: calc(35vh - 4rem);
     }
-    
-    .bespoke-intro,
-    .process-section,
-    .cta-section {
-        padding: 50px 0;
+
+    .gallery-item:nth-child(2) {
+        display: none;
     }
-    
-    .intro-content h2,
-    .process-section h2,
-    .cta-content h2 {
-        font-size: 28px;
+
+    .text-content-section,
+    .gallery-section {
+        padding: 40px 20px 20px 20px;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 } 
