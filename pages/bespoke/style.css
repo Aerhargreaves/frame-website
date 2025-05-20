@@ -80,6 +80,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .header-image-section {
+        height: 70vh;
+    }
+
     .header-image-section .header-image {
         display: none;
     }
@@ -88,8 +92,6 @@
         background-image: url('../../assets/images/bespoke/bespoke 2.jpg');
         background-size: cover;
         background-position: center;
-        padding: 2rem;
-        height: calc(35vh - 4rem);
     }
 
     .gallery-item:nth-child(2) {

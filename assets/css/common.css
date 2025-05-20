@@ -288,6 +288,22 @@ section {
     .footer-links a {
         margin: 0 10px;
     }
+
+    .footer-logo a {
+        font-size: 16px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+
+    .footer-social a {
+        font-size: 16px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -315,6 +331,23 @@ section {
     
     .nav-container {
         padding: 12px 16px;
+    }
+
+    .footer-logo a {
+        font-size: 14px;
+    }
+
+    .footer-links a {
+        font-size: 12px;
+        margin: 0 8px;
+    }
+
+    .footer-social a {
+        font-size: 14px;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
     }
 }
 

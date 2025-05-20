@@ -41,18 +41,29 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-image-section {
+        height: 70vh;
+    }
+
+    .header-image-section img {
         display: none;
+    }
+
+    .header-image-section {
+        background-image: url('../../assets/images/about/main.jpg');
+        background-size: cover;
+        background-position: center;
     }
 
     .split-content-section {
         flex-direction: column;
         padding: 2rem;
     }
+
     .text-container {
         padding: 1rem 0;
     }
-    .image-container {
-        min-height: 300px;
-    }
 
+    .image-container {
+        display: none;
+    }
 } 
