@@ -44,3 +44,7 @@ Each page follows a consistent pattern:
 3. Footer with navigation links
 
 Navigation paths use relative URLs from each page's location (e.g., `../../assets/` from `pages/about/`).
+
+## Design Rules
+
+- **Side-by-side image/text blocks must match heights**: When an image and text block are displayed side by side, they must have equal heights with no white space below either element. Use flexbox with `align-items: stretch` and ensure both containers are flex containers themselves.

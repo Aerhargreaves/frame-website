@@ -15,6 +15,7 @@
 /* Split Content Section */
 .split-content-section {
     display: flex;
+    align-items: stretch;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 5rem;
@@ -25,8 +26,7 @@
 
 .image-container {
     flex: 0.4;
-    height: 80%;
-    width: 100%;
+    display: flex;
 }
 
 .image-container img {
@@ -38,6 +38,8 @@
 .text-container {
     flex: 1;
     padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Responsive Design */
