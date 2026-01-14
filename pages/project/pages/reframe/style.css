@@ -1,246 +1,160 @@
-/* Project Page Styles */
+/* Re-Frame Project Page Styles */
 
 /* Active Link */
 .nav-links a.active {
     color: #777;
 }
 
-/* Page Banner */
-.page-banner {
-    height: 40vh;
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 80px;
-}
-
-.banner-content {
-    text-align: center;
-}
-
-.banner-content h1 {
-    font-size: 42px;
-    font-weight: 500;
-    letter-spacing: 2px;
-}
-
-/* Project Intro */
-.project-intro {
-    padding: 80px 0 40px;
-    text-align: center;
-}
-
-.intro-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.intro-content h2 {
-    font-size: 32px;
-    margin-bottom: 25px;
-    font-weight: 500;
-}
-
-.intro-content p {
-    font-size: 18px;
-    line-height: 1.8;
-}
-
-/* Project Showcase */
-.project-showcase {
-    padding: 40px 0 80px;
-}
-
-.project-filters {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-.filter-btn {
-    background: none;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 0 5px;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.filter-btn:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: #333;
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
-}
-
-.filter-btn:hover:after,
-.filter-btn.active:after {
-    width: 60%;
-}
-
-.filter-btn.active {
-    color: #333;
-    font-weight: 500;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.project-item {
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.project-item:hover {
-    transform: translateY(-10px);
-}
-
-.project-image {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 15px;
-}
-
-.project-image img {
+/* Header Image Section */
+.header-image-section {
     width: 100%;
-    height: auto;
-    transition: transform 0.5s ease;
+    height: 50vh;
+    overflow: hidden;
+    margin-top: 0;
 }
 
-.project-item:hover .project-image img {
-    transform: scale(1.05);
-}
-
-.project-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+.header-image {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Title Section */
+.title-section {
+    padding: 2rem;
+    text-align: left;
+}
+
+/* Split Content Section */
+.split-content-section {
+    padding: 0 2rem 2rem 2rem;
+}
+
+.content-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    align-items: stretch;
+    gap: 2rem;
 }
 
-.project-item:hover .project-overlay {
-    opacity: 1;
+.content-image-column {
+    flex: 1;
+    display: flex;
 }
 
-.view-project {
-    display: inline-block;
-    background-color: #fff;
-    color: #333;
-    padding: 12px 25px;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-    transform: translateY(20px);
-    transition: all 0.3s ease;
+.content-image-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.project-item:hover .view-project {
-    transform: translateY(0);
+.content-text-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
 }
 
-.project-info h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
-    font-weight: 500;
+/* Carousel Section */
+.carousel-section {
+    padding: 2rem 0;
+    overflow: hidden;
 }
 
-.project-info p {
-    color: #777;
-    font-size: 14px;
+.carousel-track {
+    overflow: hidden;
+    width: 100%;
 }
 
-/* Collaboration CTA */
-.collaboration-cta {
-    padding: 80px 0;
-    background-color: #f0f0f0;
-    text-align: center;
+.carousel-images {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
 }
 
-.cta-content {
-    max-width: 700px;
-    margin: 0 auto;
+.carousel-images img {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+    display: block;
 }
 
-.cta-content h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+/* Continuous scroll animation - left direction */
+.carousel-track[data-direction="left"] .carousel-images {
+    animation: scroll-left 30s linear infinite;
 }
 
-.cta-content p {
-    font-size: 18px;
-    margin-bottom: 30px;
+/* Continuous scroll animation - right direction */
+.carousel-track[data-direction="right"] .carousel-images {
+    animation: scroll-right 40s linear infinite;
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 15px 40px;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: background-color 0.3s ease;
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
-.cta-button:hover {
-    background-color: #555;
-    color: #fff;
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Pause animation on hover */
+.carousel-track:hover .carousel-images {
+    animation-play-state: paused;
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 992px) {
-    .project-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .content-container {
+        flex-direction: column;
+    }
+
+    .content-image-column,
+    .content-text-column {
+        flex: none;
+        width: 100%;
+    }
+
+    .content-image-column {
+        aspect-ratio: 4/3;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .page-banner {
-        height: 30vh;
-        padding-top: 60px;
+    .header-image-section {
+        height: 25vh;
     }
-    
-    .banner-content h1 {
-        font-size: 32px;
+
+    .title-section {
+        padding: 1.5rem 1rem;
     }
-    
-    .project-intro,
-    .collaboration-cta {
-        padding: 50px 0;
+
+    .split-content-section {
+        padding: 0 1rem 1.5rem 1rem;
     }
-    
-    .intro-content h2,
-    .cta-content h2 {
-        font-size: 28px;
+
+    .content-container {
+        gap: 1rem;
     }
-    
-    .project-grid {
-        grid-template-columns: 1fr;
+
+    .carousel-section {
+        padding: 1rem 0;
     }
-    
-    .project-filters {
-        flex-wrap: wrap;
+
+    .carousel-images {
+        gap: 1rem;
     }
-    
-    .filter-btn {
-        margin-bottom: 10px;
+
+    .carousel-images img {
+        height: 200px;
     }
-} 
+}
