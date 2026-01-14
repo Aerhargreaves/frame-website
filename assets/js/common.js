@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle function
     function toggleMobileMenu() {
         mobileMenu.classList.toggle('active');
-        overlay.style.display = mobileMenu.classList.contains('active') ? 'block' : 'none';
+        burgerMenu.classList.toggle('active');
+        overlay.classList.toggle('active');
         body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
-        // No burgerMenu.classList.toggle('active')
     }
     
     // Event listeners for mobile menu
