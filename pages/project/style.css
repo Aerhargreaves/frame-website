@@ -5,6 +5,56 @@
     color: #777;
 }
 
+/* Project Links Section */
+.project-links-section {
+    padding-top: 100px;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-link-card {
+    position: relative;
+    width: 100%;
+}
+
+.project-link-card a {
+    display: block;
+    position: relative;
+}
+
+.project-link-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: color-mix(in srgb, var(--color-red) 60%, transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.project-link-card:hover .project-hover-overlay {
+    opacity: 1;
+}
+
+.project-caption {
+    position: absolute;
+    top: calc(5% + 15px);
+    right: calc(2% + 15px);
+    color: var(--color-cream);
+}
+
 /* Page Banner */
 .page-banner {
     height: 40vh;
@@ -213,33 +263,46 @@
 }
 
 @media screen and (max-width: 768px) {
+    .project-links-section {
+        padding-top: 80px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 1rem;
+    }
+
+    .project-caption {
+        top: calc(5% + 10px);
+        right: calc(5% + 10px);
+        font-size: 9pt;
+    }
+
     .page-banner {
         height: 30vh;
         padding-top: 60px;
     }
-    
+
     .banner-content h1 {
         font-size: 32px;
     }
-    
+
     .project-intro,
     .collaboration-cta {
         padding: 50px 0;
     }
-    
+
     .intro-content h2,
     .cta-content h2 {
         font-size: 28px;
     }
-    
+
     .project-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .project-filters {
         flex-wrap: wrap;
     }
-    
+
     .filter-btn {
         margin-bottom: 10px;
     }

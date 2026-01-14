@@ -39,18 +39,18 @@
 
 .collection-pinstripe {
     position: absolute;
-    top: 5%;
-    left: 5%;
-    right: 5%;
-    bottom: 5%;
-    border: 2px solid var(--color-cream);
+    top: 3%;
+    left: 3%;
+    right: 3%;
+    bottom: 3%;
+    border: 1.5px solid var(--color-cream);
     pointer-events: none;
 }
 
 .collection-caption {
     position: absolute;
-    bottom: calc(5% + 15px);
-    left: calc(5% + 15px);
+    bottom: calc(2% + 15px);
+    left: calc(3% + 15px);
     color: var(--color-cream);
 }
 
