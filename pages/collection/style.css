@@ -52,7 +52,7 @@
 
 .collection-caption {
     position: absolute;
-    bottom: calc(2% + 15px);
+    top: calc(2% + 15px);
     left: calc(3% + 15px);
     color: var(--color-cream);
 }
